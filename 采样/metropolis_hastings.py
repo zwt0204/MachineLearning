@@ -35,9 +35,9 @@ def metropolis_hastings(p, iter=1000):
 
 if __name__ == '__main__':
     import matplotlib.pyplot as plt
-    samples = metropolis_hastings(circle, iter=100)
-    sns.jointplot(samples[:, 0], samples[:, 1])
+    # samples = metropolis_hastings(circle, iter=10000)
+    # sns.jointplot(samples[:, 0], samples[:, 1])
 
-    samples = metropolis_hastings(pgauss, iter=100)
+    samples = metropolis_hastings(pgauss, iter=10000)
     sns.jointplot(samples[:, 0], samples[:, 1])
     plt.show()
